@@ -1,0 +1,216 @@
+/* Small */
+/* @media (max-width: 250px) {
+    .container {
+        width: 227px;
+    }
+}
+
+/* Medium */
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} 
+body{
+    margin: 0;
+}
+.container{
+            width: 98%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            display: flex;
+                flex-direction: column;
+                margin: 20px auto;
+                z-index: 1;
+    
+}
+.container .form{
+    width: 93%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+        gap: 6px;
+        height: 79px;
+        padding: 16px;
+        background-color: #c5c2fb;
+}
+.container .form .input{
+    flex: 1;
+    border: none;
+    border-radius: 9px;
+    height: 39px;
+}
+.container .form .add{
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: red;
+        height: 39px;
+        cursor: pointer;
+    }
+.container .tasks{
+            width: 93%;
+                height: auto;
+                padding: 16px;
+                background-color: #c5c2fb;
+                border-radius: 7px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    }
+.container .tasks .task{
+    height: 20px;
+    width: 97%;
+    background-color: beige;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .tasks .task .txt{
+    width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+}
+.container .tasks .task .Done{
+    text-decoration: line-through;
+}
+.container .tasks .task .txt i {
+    cursor: pointer;
+}
+.container .tasks .Done{
+        opacity: 67%;
+        text-decoration: line-through;
+            height: 20px;
+                width: 97%;
+                background-color: beige;
+                padding: 8px;
+                margin: 5px;
+                border-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+}
+.container .tasks .Done  .right{
+    color: green;
+}
+.container .tasks .Done .trash{
+    padding-right: 7px;
+    cursor: pointer;
+}
+.undone{
+    cursor: pointer;
+}
+.container .tasks button{
+    border: none;
+        height: 42px;
+        width: 109px;
+        border-radius: 7px;
+        margin-top: 9px;
+        padding: 7px;
+        cursor: pointer;
+}
+.container .tasks button:hover{
+
+    color: white;
+        background-color: #cc0808;
+}
+@media (max-width: 992px) and (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1115px){
+    .container{
+        width: 700px;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1115px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 250px) {
+    .container {
+        width: 93%;
+    }
+}
+
+
+.pop{
+width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    background-color: #26272738;
+    border-radius: 7px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: pop ease-in-out linear;
+        display: none;
+}
+.pop .pop-content{
+padding: 13px;
+background: #9c94ee;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 106px;
+border-radius: 8px;
+width: 281px;
+flex-direction: column;
+    gap: 18px;
+        box-shadow: 1px 1px 20px 0px white;
+        animation: pop steps(12) forwards;
+        position: relative;
+}
+.pop .pop-content input{
+    border: none;
+        width: 163px;
+            height: 36px;
+            border-radius: 5px;
+            margin-top: 9px;
+}
+.pop .pop-content button{
+    border: none;
+        border-radius: 4px;
+        padding: 7px;
+        cursor: pointer;
+        transition: all .9s cubic-bezier(0.57, 0.03, 0.11, 0.91);
+}
+.pop .pop-content button:hover{
+        background-color: #a82be2c9;
+            color: white;
+}
+.pop .pop-content i{
+position: absolute;
+top: 7px;
+right: 16px;
+color: #ff0000;
+cursor: pointer;
+}
+.pop .pop-content .nameTxt{
+color: black;
+text-align: center;
+font-size: 19px;
+font-weight: 400;
+letter-spacing: 4px;
+    line-height: 26px;
+}
+.pop .pop-content .nameTxt span{
+    color: white;
+}
+
